@@ -1,4 +1,4 @@
-# 🔍 SEO Site Auditor
+![seo_auditor_logo](https://github.com/user-attachments/assets/11bd6118-b122-4b1d-90de-985c47dcac2e)# 🔍 SEO Site Auditor
 
 **A professional SEO auditing tool built with Python + Streamlit**  
 *Engineered by [Zeeshan Alam](https://linkedin.com/in/zeeshan-alam-seo-expert/) — SEO Specialist with 22+ years experience*
