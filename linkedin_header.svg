@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="60%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+
+    <!-- Accent gradient blue-purple -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+
+    <!-- Green glow -->
+    <filter id="greenGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Soft purple glow -->
+    <filter id="purpleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Clip to banner bounds -->
+    <clipPath id="bannerClip">
+      <rect width="1584" height="396"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1584" height="396" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g clip-path="url(#bannerClip)" opacity="0.05">
+    <line x1="0" y1="66"  x2="1584" y2="66"  stroke="#7c3aed" stroke-width="1"/>
+    <line x1="0" y1="132" x2="1584" y2="132" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="0" y1="198" x2="1584" y2="198" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="0" y1="264" x2="1584" y2="264" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="0" y1="330" x2="1584" y2="330" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="198" y1="0" x2="198" y2="396" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="396" y1="0" x2="396" y2="396" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="594" y1="0" x2="594" y2="396" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="792" y1="0" x2="792" y2="396" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="990" y1="0" x2="990" y2="396" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="1188" y1="0" x2="1188" y2="396" stroke="#7c3aed" stroke-width="1"/>
+    <line x1="1386" y1="0" x2="1386" y2="396" stroke="#7c3aed" stroke-width="1"/>
+  </g>
+
+  <!-- Glowing orb left -->
+  <circle cx="120" cy="200" r="180" fill="#3b82f6" opacity="0.06" filter="url(#purpleGlow)"/>
+
+  <!-- Glowing orb right -->
+  <circle cx="1460" cy="180" r="200" fill="#7c3aed" opacity="0.08" filter="url(#purpleGlow)"/>
+
+  <!-- Decorative arc top-right -->
+  <circle cx="1500" cy="0" r="280" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.15" stroke-dasharray="10 8"/>
+  <circle cx="1500" cy="0" r="220" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.1" stroke-dasharray="6 10"/>
+
+  <!-- Decorative arc bottom-left -->
+  <circle cx="0" cy="396" r="220" fill="none" stroke="url(#accent)" stroke-width="1" opacity="0.12" stroke-dasharray="8 8"/>
+
+  <!-- ── RIGHT SIDE: Bar chart visualization ── -->
+  <g clip-path="url(#bannerClip)">
+    <!-- Bars -->
+    <rect x="980"  y="240" width="38" height="100" rx="6" fill="url(#accent)" opacity="0.5"/>
+    <rect x="1030" y="190" width="38" height="150" rx="6" fill="url(#accent)" opacity="0.6"/>
+    <rect x="1080" y="210" width="38" height="130" rx="6" fill="url(#accent)" opacity="0.5"/>
+    <rect x="1130" y="160" width="38" height="180" rx="6" fill="url(#accent)" opacity="0.7"/>
+    <rect x="1180" y="195" width="38" height="145" rx="6" fill="url(#accent)" opacity="0.55"/>
+    <rect x="1230" y="175" width="38" height="165" rx="6" fill="url(#accent)" opacity="0.65"/>
+    <rect x="1280" y="145" width="38" height="195" rx="6" fill="url(#accent)" opacity="0.75"/>
+    <rect x="1330" y="165" width="38" height="175" rx="6" fill="url(#accent)" opacity="0.6"/>
+    <rect x="1380" y="130" width="38" height="210" rx="6" fill="url(#accent)" opacity="0.8"/>
+    <rect x="1430" y="150" width="38" height="190" rx="6" fill="url(#accent)" opacity="0.65"/>
+    <rect x="1480" y="115" width="38" height="225" rx="6" fill="url(#accent)" opacity="0.85"/>
+    <rect x="1530" y="135" width="38" height="205" rx="6" fill="url(#accent)" opacity="0.7"/>
+
+    <!-- Baseline -->
+    <line x1="970" y1="344" x2="1584" y2="344" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Trend line -->
+    <polyline
+      points="999,232 1049,183 1099,203 1149,153 1199,188 1249,170 1299,138 1349,158 1399,123 1449,143 1499,108 1549,128"
+      fill="none" stroke="#22c55e" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round"
+      filter="url(#greenGlow)" opacity="0.95"/>
+
+    <!-- Trend dots -->
+    <circle cx="999"  cy="232" r="5" fill="#22c55e" filter="url(#greenGlow)"/>
+    <circle cx="1049" cy="183" r="5" fill="#22c55e" filter="url(#greenGlow)"/>
+    <circle cx="1149" cy="153" r="5" fill="#22c55e" filter="url(#greenGlow)"/>
+    <circle cx="1299" cy="138" r="5" fill="#22c55e" filter="url(#greenGlow)"/>
+    <circle cx="1499" cy="108" r="5" fill="#22c55e" filter="url(#greenGlow)"/>
+
+    <!-- Magnifying glass -->
+    <g transform="translate(870, 155)">
+      <circle cx="0" cy="0" r="55" fill="none" stroke="url(#accent)" stroke-width="8"/>
+      <circle cx="0" cy="0" r="55" fill="#1e293b" opacity="0.4"/>
+      <circle cx="-16" cy="-18" r="14" fill="white" opacity="0.05"/>
+      <line x1="38" y1="38" x2="72" y2="72" stroke="url(#accent)" stroke-width="11" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- ── LEFT SIDE: Text content ── -->
+
+  <!-- Top label -->
+  <rect x="60" y="62" width="200" height="28" rx="14" fill="#22c55e" opacity="0.12"/>
+  <rect x="60" y="62" width="200" height="28" rx="14" fill="none" stroke="#22c55e" stroke-width="1.2"/>
+  <text x="160" y="81" font-family="'Courier New', monospace" font-size="11"
+        font-weight="700" fill="#22c55e" text-anchor="middle" letter-spacing="2">
+    AI-POWERED SEO TOOL
+  </text>
+
+  <!-- Main headline -->
+  <text x="60" y="160" font-family="Georgia, 'Times New Roman', serif"
+        font-size="58" font-weight="700" fill="#f1f5f9" letter-spacing="1">
+    SEO Site Auditor
+  </text>
+
+  <!-- Gradient underline -->
+  <rect x="60" y="172" width="480" height="4" rx="2" fill="url(#accent)"/>
+
+  <!-- Subheadline -->
+  <text x="60" y="218" font-family="Georgia, 'Times New Roman', serif"
+        font-size="20" fill="#94a3b8" letter-spacing="0.5">
+    Crawl · Analyse · Score · Report
+  </text>
+
+  <!-- Feature pills -->
+  <!-- Pill 1 -->
+  <rect x="60" y="248" width="130" height="30" rx="15" fill="#1e40af" opacity="0.3"/>
+  <rect x="60" y="248" width="130" height="30" rx="15" fill="none" stroke="#3b82f6" stroke-width="1"/>
+  <text x="125" y="268" font-family="'Courier New', monospace" font-size="11"
+        fill="#93c5fd" text-anchor="middle" letter-spacing="1">100 Pages</text>
+
+  <!-- Pill 2 -->
+  <rect x="202" y="248" width="150" height="30" rx="15" fill="#4c1d95" opacity="0.3"/>
+  <rect x="202" y="248" width="150" height="30" rx="15" fill="none" stroke="#7c3aed" stroke-width="1"/>
+  <text x="277" y="268" font-family="'Courier New', monospace" font-size="11"
+        fill="#c4b5fd" text-anchor="middle" letter-spacing="1">10+ SEO Checks</text>
+
+  <!-- Pill 3 -->
+  <rect x="364" y="248" width="140" height="30" rx="15" fill="#064e3b" opacity="0.4"/>
+  <rect x="364" y="248" width="140" height="30" rx="15" fill="none" stroke="#22c55e" stroke-width="1"/>
+  <text x="434" y="268" font-family="'Courier New', monospace" font-size="11"
+        fill="#86efac" text-anchor="middle" letter-spacing="1">A–F Grading</text>
+
+  <!-- Pill 4 -->
+  <rect x="516" y="248" width="170" height="30" rx="15" fill="#1e3a5f" opacity="0.4"/>
+  <rect x="516" y="248" width="170" height="30" rx="15" fill="none" stroke="#3b82f6" stroke-width="1"/>
+  <text x="601" y="268" font-family="'Courier New', monospace" font-size="11"
+        fill="#93c5fd" text-anchor="middle" letter-spacing="1">HTML·Excel·PDF</text>
+
+  <!-- URL -->
+  <text x="60" y="318" font-family="'Courier New', monospace"
+        font-size="14" fill="#3b82f6" letter-spacing="1">
+    🔗 zee-seo-audit.streamlit.app
+  </text>
+
+  <!-- Author -->
+  <text x="60" y="352" font-family="Georgia, 'Times New Roman', serif"
+        font-size="15" fill="#475569" letter-spacing="2">
+    Built by
+    <tspan fill="#7c3aed" font-weight="700"> Zeeshan Alam</tspan>
+    <tspan fill="#475569"> · SEO Specialist · 22+ Years Experience</tspan>
+  </text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="390" width="1584" height="6" fill="url(#accent)" opacity="0.7"/>
+</svg>
