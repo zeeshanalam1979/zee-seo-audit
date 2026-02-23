@@ -6,7 +6,7 @@
 ---
 
 ## 🚀 Live Demo
-👉 **[Launch the App](https://zee-seo-audit.streamlit.app/)
+👉 [Launch the App](https://zee-seo-audit.streamlit.app/)
 
 ---
 
